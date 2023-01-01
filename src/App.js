@@ -1,13 +1,12 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./App.css";
+import Routing from "./routes/index.routes";
 
 function App() {
   return (
-    <div>
-      <header>it's header</header>
-      <div>main</div>
-      <footer>it's footer</footer>
-    </div>
+    <Suspense>
+      <Routing></Routing>
+    </Suspense>
   );
 }
 
