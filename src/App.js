@@ -4,7 +4,7 @@ import Routing from "./routes/index.routes";
 
 function App() {
   return (
-    <Suspense>
+    <Suspense fallback={<p>is loading</p>}>
       <Routing></Routing>
     </Suspense>
   );

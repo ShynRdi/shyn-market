@@ -2,8 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import PublicRoutes from "./public.routes";
 import { PATHS } from "../configs/routes.config";
-import Home from "../pages/home/home.page";
-import ErrorPage from "../pages/404-error/error.page";
+
+const Home = React.lazy(() => import("../pages/home/home.page"));
+const ErrorPage = React.lazy(() => import("../pages/404-error/error.page"));
 
 const Routing = () => {
   return (
