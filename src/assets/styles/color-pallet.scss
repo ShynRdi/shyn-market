@@ -1,7 +1,48 @@
 $first-color: #142132;
 $second-color: #e5e5e5;
 $third-color: #fca311;
+$white: #ffffff;
 
+* {
+  margin: 0;
+}
 .coloraa {
-  background-color: $base-color;
+  background-color: $first-color;
+  color: $white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 98vw;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding: 1rem 0;
+}
+.coloraa a {
+  text-decoration: none;
+  color: $white;
+}
+.flex {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  align-items: center;
+}
+.abbas {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-in {
+  border-bottom: 1px solid $white;
+  width: 100%;
+  text-align: center;
+}
+.sign-in,
+.log-in {
+  padding: 0.25rem 0;
 }
